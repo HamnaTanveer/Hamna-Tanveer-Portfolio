@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { FaStar, FaArrowRight } from "react-icons/fa";
-import logoImg from "../../assets/Images/logo.png"; 
+import logoImg from "../../assets/Images/home.png";
 
 export default function Home() {
   return (
