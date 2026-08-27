@@ -41,7 +41,7 @@ export const portfolioData = [
     category: "Featured Project",
     description: "A clean, efficient productivity application built to manage day-to-day tasks. Includes smooth state management, item filtering, local storage persistence, and a minimalist design aesthetic.",
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1000&q=80",
-    liveLink: "https://todo-list-app-red-ten.vercel.app/",
+    liveLink: "https://hamna-todo-list.vercel.app",
     githubLink: "https://github.com/HamnaTanveer/todo-list-app",
   },
 ];
