@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaPaperPlane, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt, FaPaperPlane, FaLinkedin, FaGithub, FaClock } from "react-icons/fa";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -130,16 +130,15 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Phone */}
+            {/* Freelance / Response Time Status */}
             <div className="flex items-start gap-5 p-5 rounded-2xl bg-white/50 border border-purple-100 hover:bg-white/85 transition-all group">
               <div className="w-12 h-12 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-600 shrink-0">
-                <FaPhoneAlt />
+                <FaClock />
               </div>
               <div className="space-y-1">
-                <h4 className="text-xs font-bold uppercase tracking-widest text-purple-600">Phone</h4>
-                <a href="tel:+923056231653" className="text-slate-900 text-base font-semibold hover:text-purple-600 transition-colors block">
-                  +92 305 6231653
-                </a>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-purple-600">Freelance / Support</h4>
+                <p className="text-slate-900 text-base font-semibold">Available 24/7</p>
+                <p className="text-slate-500 text-sm">Fast response within 24 hours</p>
               </div>
             </div>
 
@@ -150,7 +149,7 @@ export default function Contact() {
               </div>
               <div className="space-y-1">
                 <h4 className="text-xs font-bold uppercase tracking-widest text-purple-600">Mail</h4>
-                <a href="mailto:hamnnat992@gmail.com" className="text-slate-900 text-base font-semibold hover:text-purple-600 transition-colors block">
+                <a href="mailto:hamnat992@gmail.com" className="text-slate-900 text-base font-semibold hover:text-purple-600 transition-colors block">
                   hamnat992@gmail.com
                 </a>
               </div>
@@ -165,9 +164,6 @@ export default function Contact() {
                 </a>
                 <a href="https://www.linkedin.com/in/hamna-tanveer-963303431/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-slate-700 hover:bg-purple-600 hover:text-white transition-all">
                   <FaLinkedin className="text-sm" />
-                </a>
-                <a href="https://instagram.com/hum._.nah" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-slate-700 hover:bg-purple-600 hover:text-white transition-all">
-                  <FaInstagram className="text-sm" />
                 </a>
               </div>
             </div>
