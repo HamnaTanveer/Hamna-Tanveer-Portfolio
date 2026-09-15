@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import { FaStar, FaArrowRight } from "react-icons/fa";
 import logoImg from "../../assets/Images/home.png";
@@ -36,7 +37,7 @@ export default function Home() {
                 <ReactTyped
                   strings={[
                     "Frontend Developer",
-                  
+
                     "React.js Enthusiast"
                   ]}
                   typeSpeed={80}
@@ -49,7 +50,7 @@ export default function Home() {
 
           {/* Short Bio */}
           <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-            I craft clean, user-friendly, and responsive web interfaces with modern technologies. Passionate about turning ideas into real-world interactive applications.
+          Passionate about building fast, user-friendly interfaces that feel as good as they look. Focused on writing clean code and thoughtful design.
           </p>
 
           {/* Action Buttons */}
@@ -72,19 +73,33 @@ export default function Home() {
 
         </div>
 
-        {/*  Glowing Logo Image */}
+        {/* Image — true seamless blend: edges fade to transparent via a CSS mask,
+            so the photo dissolves into whatever sits behind it instead of sitting
+            inside a circle/frame/border */}
         <div className="flex items-center justify-center relative">
-          {/* Background glowing aura matching Sidebar tones */}
-          <div className="absolute w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-tr from-purple-300 via-purple-200 to-violet-300 blur-xl opacity-50 animate-pulse"></div>
 
-          {/* Image Container with Border & Shadow */}
-          <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-tr from-purple-200 via-purple-100 to-violet-200 p-2 shadow-xl shadow-purple-300/60 flex items-center justify-center border-4 border-purple-200 overflow-hidden group">
-            <img
-              src={logoImg}
-              alt="Hamna Tanveer Logo"
-              className="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
+          {/* soft color wash behind the image, same palette as the page, so the
+              fading edges have something to blend into rather than fading to white */}
+          <motion.div
+            aria-hidden
+            animate={{ scale: [1, 1.1, 1], opacity: [0.35, 0.55, 0.35] }}
+            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute w-80 h-80 sm:w-[28rem] sm:h-[28rem] lg:w-[32rem] lg:h-[32rem] rounded-full bg-gradient-to-tr from-fuchsia-200 via-purple-200 to-violet-200 blur-3xl"
+          />
+
+          <motion.img
+            src={logoImg}
+            alt="Hamna Tanveer"
+            animate={{ y: [0, -12, 0] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+            className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] object-cover"
+            style={{
+              WebkitMaskImage:
+                "radial-gradient(circle at center, black 45%, transparent 78%)",
+              maskImage:
+                "radial-gradient(circle at center, black 45%, transparent 78%)",
+            }}
+          />
         </div>
 
       </div>

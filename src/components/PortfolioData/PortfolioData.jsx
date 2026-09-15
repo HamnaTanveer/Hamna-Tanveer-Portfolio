@@ -46,10 +46,10 @@ export const portfolioData = [
   },
   {
    id: 6,
-    title: "YouTube Video Streaming Clone",
+    title: "YouTube Web App Clone",
     category: "Featured Project",
     description: "A feature-rich YouTube web application clone built with React and Tailwind CSS. Features dynamic video feeds, real-time search functionality, API integrations, and a responsive modern video-watching interface.",
-    image: "/you.jpeg", 
+    image: "y.jpg", 
     liveLink: "https://youtube-clone-one-theta-53.vercel.app/",
     githubLink: "https://github.com/HamnaTanveer/Youtube-clone",
   },
