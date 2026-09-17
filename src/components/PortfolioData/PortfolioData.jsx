@@ -5,7 +5,7 @@ export const portfolioData = [
     category: "Featured Project",
     description: "A dynamic weather forecasting web application built with JavaScript. Fetches real-time meteorological data, displaying atmospheric conditions, temperature trends, and location-based updates instantly.",
     image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=1000&q=80",
-    liveLink: "https://weather-forecast-app-six-lemon.vercel.app/",
+    liveLink: "https://hamna-weather-forecast.vercel.app/",
     githubLink: "https://github.com/HamnaTanveer/weather-forecast-app",
   },
   {
@@ -14,7 +14,7 @@ export const portfolioData = [
     category: "Featured Project",
     description: "An interactive digital library platform integrated with external REST APIs. Allows users to explore extensive book catalogs, search titles dynamically, and view detailed publication summaries.",
     image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1000&q=80",
-    liveLink: "https://book-store-app-sable-two.vercel.app/",
+    liveLink: "https://hamna-book-store-app.vercel.app/",
     githubLink: "https://github.com/HamnaTanveer/BookStore-App",
   },
   {
@@ -32,7 +32,7 @@ export const portfolioData = [
     category: "Featured Project",
     description: "An advanced online shopping platform developed using React.js. Features dynamic product filtering options, seamless category sorting, interactive cart handling, and a responsive modern user interface.",
     image: "/Shopping.jpeg",
-    liveLink: "https://shopping-cart-app-q72w.vercel.app/",
+    liveLink: "https://hamna-shopping-cart-app.vercel.app/",
     githubLink: "https://github.com/HamnaTanveer/shopping-cart-app",
   },
   {
@@ -50,7 +50,7 @@ export const portfolioData = [
     category: "Featured Project",
     description: "A feature-rich YouTube web application clone built with React and Tailwind CSS. Features dynamic video feeds, real-time search functionality, API integrations, and a responsive modern video-watching interface.",
     image: "y.jpg", 
-    liveLink: "https://youtube-clone-one-theta-53.vercel.app/",
+    liveLink: "https://hamna-youtube-clone.vercel.app/",
     githubLink: "https://github.com/HamnaTanveer/Youtube-clone",
   },
 ];
