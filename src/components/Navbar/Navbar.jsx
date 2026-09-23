@@ -52,7 +52,7 @@ const cvPath = `${import.meta.env.BASE_URL}Hamna_Tanveer_CV.pdf#toolbar=0`;
                             style={{ fontFamily: "'Poppins', sans-serif" }}
                         >
                             <FaEye className="text-xs" />
-                            <span>View My CV</span>
+                            <span> My Resume</span>
                         </a>
                     </div>
 
@@ -90,7 +90,7 @@ const cvPath = `${import.meta.env.BASE_URL}Hamna_Tanveer_CV.pdf#toolbar=0`;
                             style={{ fontFamily: "'Poppins', sans-serif" }}
                         >
                             <FaEye className="text-xs" />
-                            <span>View My CV</span>
+                            <span> My Resume</span>
                         </a>
                     </div>
                 )}
