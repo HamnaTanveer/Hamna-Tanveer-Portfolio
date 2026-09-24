@@ -9,10 +9,10 @@ export default function Project() {
 
         {/* Section Header */}
         <div className="text-center space-y-3" data-aos="fade-up">
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-800">
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-ink">
             My{" "}
             <span
-              className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-600 to-violet-600"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-sage-dark via-sage to-clay"
               style={{
                 fontFamily: "'Dancing Script', cursive",
                 fontWeight: 700,
@@ -23,9 +23,9 @@ export default function Project() {
             </span>
           </h2>
 
-          <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-violet-500 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-sage-dark to-sage mx-auto rounded-full"></div>
 
-          <p className="text-slate-600 max-w-xl mx-auto text-sm sm:text-base">
+          <p className="text-body max-w-xl mx-auto text-sm sm:text-base">
             Here are some of the web applications and tools I've built,
             reflecting my journey in frontend development.
           </p>
@@ -39,7 +39,6 @@ export default function Project() {
             return (
               <div
                 key={project.id}
-                
                 data-aos={isEven ? "fade-right" : "fade-left"}
                 className={`flex flex-col lg:flex-row items-center gap-8 lg:gap-0 ${
                   isEven ? "lg:flex-row" : "lg:flex-row-reverse"
@@ -52,20 +51,20 @@ export default function Project() {
                     isEven ? "lg:pr-0" : "lg:pl-0"
                   }`}
                 >
-                  <span className="text-xs sm:text-sm font-semibold tracking-widest text-violet-600 uppercase block">
+                  <span className="text-xs sm:text-sm font-semibold tracking-widest text-sage-dark uppercase block">
                     {project.category}
                   </span>
 
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-800">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-ink">
                     {project.title}
                   </h3>
 
                   <div
-                    className={`p-6 sm:p-8 rounded-3xl bg-white/55 backdrop-blur-xl border border-purple-200/50 shadow-2xl shadow-purple-300/30 ${
+                    className={`p-6 sm:p-8 rounded-3xl bg-white/70 backdrop-blur-xl border border-stone shadow-xl shadow-sage-dark/10 ${
                       isEven ? "lg:-mr-20" : "lg:-ml-20"
                     }`}
                   >
-                    <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
+                    <p className="text-body text-sm sm:text-base leading-relaxed">
                       {project.description}
                     </p>
 
@@ -75,7 +74,7 @@ export default function Project() {
                         href={project.liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-10 h-10 rounded-full bg-purple-100/70 border border-purple-300 flex items-center justify-center text-purple-700 hover:bg-gradient-to-r hover:from-purple-600 hover:to-violet-500 hover:text-white transition-all duration-300 shadow-md shadow-purple-200"
+                        className="w-10 h-10 rounded-full bg-sand/80 border border-stone flex items-center justify-center text-sage-dark hover:bg-gradient-to-r hover:from-sage-dark hover:to-sage hover:text-white transition-all duration-300 shadow-sm"
                         title="View Live Project"
                       >
                         <FaGlobe className="text-base" />
@@ -85,7 +84,7 @@ export default function Project() {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-10 h-10 rounded-full bg-purple-100/70 border border-purple-300 flex items-center justify-center text-purple-700 hover:bg-gradient-to-r hover:from-purple-600 hover:to-violet-500 hover:text-white transition-all duration-300 shadow-md shadow-purple-200"
+                        className="w-10 h-10 rounded-full bg-sand/80 border border-stone flex items-center justify-center text-sage-dark hover:bg-gradient-to-r hover:from-sage-dark hover:to-sage hover:text-white transition-all duration-300 shadow-sm"
                         title="GitHub Repository"
                       >
                         <FaGithub className="text-base" />
@@ -100,9 +99,9 @@ export default function Project() {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block relative group overflow-hidden rounded-3xl border border-purple-200 shadow-xl bg-white"
+                    className="block relative group overflow-hidden rounded-3xl border border-stone shadow-lg bg-white"
                   >
-                    <div className="absolute inset-0 bg-purple-900/5 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
+                    <div className="absolute inset-0 bg-sage-dark/5 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
                     <img
                       src={project.image}
                       alt={project.title}

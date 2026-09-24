@@ -1,13 +1,43 @@
 @import "tailwindcss";
+
+@theme {
+  --color-canvas: #F7F1E9;
+  --color-sand: #EDE3D6;
+  --color-stone: #DACDBB;
+  --color-sage: #5E7268;
+  --color-sage-light: #A3B5A9;
+  --color-sage-dark: #34443D;
+  --color-clay: #BC8467;
+  --color-blush: #EBCFC0;
+  --color-ink: #1F2926;
+  --color-body: #56605B;
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   padding: 0;
+  color: #56605B;
+  background-color: #F7F1E9;
+  background-image:
+    radial-gradient(ellipse 60% 50% at 0% 0%, rgba(94, 114, 104, 0.16), transparent 70%),
+    radial-gradient(ellipse 55% 50% at 100% 100%, rgba(188, 132, 103, 0.20), transparent 70%),
+    linear-gradient(180deg, #FBF6EF 0%, #F3EADF 100%);
+  background-attachment: fixed;
+}
 
-/*  background: linear-gradient(to bottom, #f3e8ff, #faf5ff, #ede9fe);  */
- /* background-color: #f4ecfe; */
- background-color: #f1e6fb;
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(52, 68, 61, 0.16) 1px, transparent 1.2px);
+  background-size: 26px 26px;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 25%, transparent 80%);
+  mask-image: radial-gradient(ellipse at center, black 25%, transparent 80%);
 }
