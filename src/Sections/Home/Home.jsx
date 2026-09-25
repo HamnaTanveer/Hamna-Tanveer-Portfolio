@@ -1,9 +1,8 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import { FaStar, FaArrowRight } from "react-icons/fa";
-import logoImg from "../../assets/Images/favii.png";
+import logoImg from "../../assets/Images/loo.png";
 
 export default function Home() {
   return (
@@ -55,6 +54,7 @@ export default function Home() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
+            
             <a
               href="#projects"
               className="flex items-center gap-2 px-6 py-3 text-sm font-bold text-white bg-gradient-to-r from-sage-dark to-sage hover:from-ink hover:to-sage-dark rounded-full shadow-lg shadow-sage-dark/30 transition-all duration-300 transform hover:scale-105 active:scale-95"
@@ -81,7 +81,7 @@ export default function Home() {
             aria-hidden
             animate={{ scale: [1, 1.1, 1], opacity: [0.45, 0.7, 0.45] }}
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute w-80 h-80 sm:w-[28rem] sm:h-[28rem] lg:w-[32rem] lg:h-[32rem] rounded-full bg-gradient-to-tr from-sage-light via-blush to-clay/50 blur-3xl"
+            className="absolute w-[26rem] h-72 sm:w-[32rem] sm:h-80 lg:w-[38rem] lg:h-96 rounded-full bg-gradient-to-tr from-sage-light via-blush to-clay/50 blur-3xl"
           />
 
           <motion.img
@@ -89,12 +89,12 @@ export default function Home() {
             alt="Hamna Tanveer"
             animate={{ y: [0, -12, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] object-cover"
+            className="relative w-full max-w-[26rem] sm:max-w-[32rem] lg:max-w-[38rem] object-contain"
             style={{
               WebkitMaskImage:
-                "radial-gradient(circle at center, black 40%, transparent 78%)",
+                "radial-gradient(ellipse 68% 78% at center, black 60%, transparent 96%)",
               maskImage:
-                "radial-gradient(circle at center, black 40%, transparent 78%)",
+                "radial-gradient(ellipse 68% 78% at center, black 60%, transparent 96%)",
             }}
           />
         </div>

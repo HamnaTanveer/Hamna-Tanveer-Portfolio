@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaLaptopCode, FaRocket, FaReact, FaHtml5, FaCss3Alt, FaGithub } from "react-icons/fa";
-import { SiTailwindcss, SiJavascript, SiRedux, SiMui } from "react-icons/si";
+import { FaGraduationCap, FaLaptopCode, FaRocket } from "react-icons/fa";
 
 const cards = [
   {
@@ -18,15 +17,11 @@ const cards = [
   },
 ];
 
-const techStack = [
-  { icon: <FaReact />, name: "React", color: "text-sky-500" },
-  { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "text-cyan-500" },
-  { icon: <SiJavascript />, name: "JavaScript", color: "text-yellow-500" },
-  { icon: <SiRedux />, name: "Redux Toolkit", color: "text-sage-dark" },
-  { icon: <SiMui />, name: "MUI", color: "text-blue-600" },
-  { icon: <FaHtml5 />, name: "HTML5", color: "text-orange-500" },
-  { icon: <FaCss3Alt />, name: "CSS3", color: "text-blue-500" },
-  { icon: <FaGithub />, name: "GitHub", color: "text-ink" },
+const stats = [
+  { value: "2+", label: "Years Learning" },
+  { value: "15+", label: "Projects Built" },
+  { value: "5", label: "Certification" },
+  { value: "10+", label: "Technologies" },
 ];
 
 export default function About() {
@@ -101,29 +96,29 @@ export default function About() {
           </div>
         </div>
 
-        {/* Tech marquee */}
+        {/* Stats row */}
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative mt-16 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4"
         >
-          <motion.div
-            className="flex gap-10 w-max"
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          >
-            {[...techStack, ...techStack].map((t, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-2 px-5 py-3 rounded-2xl bg-white/70 backdrop-blur-md border border-stone/60 shadow-sm whitespace-nowrap"
-              >
-                <span className={`text-xl ${t.color}`}>{t.icon}</span>
-                <span className="text-sm font-medium text-ink">{t.name}</span>
-              </div>
-            ))}
-          </motion.div>
+          {stats.map((s, i) => (
+            <motion.div
+              key={s.label}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.4, delay: i * 0.08 }}
+              className="text-center p-5 rounded-2xl bg-white/60 backdrop-blur-md border border-stone/60 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            >
+              <p className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-sage-dark to-clay bg-clip-text text-transparent">
+                {s.value}
+              </p>
+              <p className="text-xs sm:text-sm text-body font-medium mt-1">{s.label}</p>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>
