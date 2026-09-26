@@ -9,7 +9,7 @@ export default function Navbar() {
     };
 
     // BASE_URL so this works even if deployed under a subpath
-    const cvPath = `${import.meta.env.BASE_URL}Hamna_Tanveer_CV.pdf#toolbar=0`;
+    const cvPath = `${import.meta.env.BASE_URL}hamna-cv01.pdf#toolbar=0`;
 
     return (
         <>
